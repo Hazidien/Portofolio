@@ -18,11 +18,8 @@ In the repository settings, open **Pages**, choose **Deploy from a branch**, sel
 
 ## Main files
 
-- `index.html` — all portfolio content and project links
+- `index.html` — portfolio content and project links
 - `style.css` — layout, colors, typography and responsive behavior
-- `assets/profile.jpg` — profile photo
-- `assets/cv.pdf` — CV download
-- `assets/portfolio.pdf` — full portfolio download
-- `assets/projects/solar-surabaya.webp` — rooftop solar analysis map
-- `assets/projects/deforestation-west-sumatra.webp` — forest-change map
-- `assets/projects/campus-transit.webp` — campus transit map
+- Images and PDF documents — loaded directly from the original `Hazidien/hazidien-portfolio` repository to preserve the source assets without duplicate copies
+
+The image and document links depend on the original repository remaining public and keeping its current asset paths.
