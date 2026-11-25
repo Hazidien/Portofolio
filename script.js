@@ -23,7 +23,7 @@ function renderProjects(filter="all"){
  const visible=projects.filter(p=>filter==="all"||p.category===filter|| (filter==="GIS & Planning"&&p.category==="GIS & Planning") || (filter==="Modelling"&&p.category==="Modelling"));
  grid.innerHTML=visible.map(p=>`<article class="project-card" tabindex="0" role="button" aria-label="Read about ${escapeHTML(p.title)}" data-project="${p.id}">
  <img src="${escapeHTML(p.image)}" alt="${escapeHTML(p.summary)}" loading="lazy" ${p.fallback?`onerror="this.onerror=null;this.src='${escapeHTML(p.fallback)}'"`:""}>
- <div class="project-content"><p class="project-category">${escapeHTML(p.place)}</p><h3>${escapeHTML(p.summary)}</h3><p>${escapeHTML(p.description.slice(0,150))}${p.description.length>150?"…":""}</p></div></article>`).join("");
+ <div class="project-content"><p class="project-category">${escapeHTML(p.place)}</p><h3>${escapeHTML(p.summary)}</h3><p>${escapeHTML(p.description)</p></div></article>`).join("");
 }
 function openProject(id,trigger){
  const p=projects.find(item=>item.id===Number(id));if(!p)return;
